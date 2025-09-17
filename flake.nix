@@ -59,8 +59,7 @@
         name = "run-NanoKVM";
         runtimeInputs = [ pkgs.nodePackages.http-server ];
         text = ''
-          cd ${drv}
-          http-server -p 8080 -a localhost
+          http-server -p 8080 -a localhost ${drv}
         '';
       };
     in
