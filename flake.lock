@@ -1,0 +1,44 @@
+{
+  "nodes": {
+    "NanoKVM-USB": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1755764154,
+        "narHash": "sha256-z0Sk7kTYTu7qP4j/7DJ1lFvGry/eH4bAfLH/u1RHSTE=",
+        "owner": "sipeed",
+        "repo": "NanoKVM-USB",
+        "rev": "b7694196081cf5e9699d59e2e2a2c6ac48e8dcd1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sipeed",
+        "repo": "NanoKVM-USB",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1757745802,
+        "narHash": "sha256-hLEO2TPj55KcUFUU1vgtHE9UEIOjRcH/4QbmfHNF820=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "c23193b943c6c689d70ee98ce3128239ed9e32d1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "NanoKVM-USB": "NanoKVM-USB",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
