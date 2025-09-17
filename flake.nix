@@ -1,7 +1,5 @@
 {
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-  inputs.NanoKVM-USB.url = "github:sipeed/NanoKVM-USB";
-  inputs.NanoKVM-USB.flake = false;
 
   outputs =
     inputs@{ ... }:
@@ -23,9 +21,9 @@
         # to build our own version
         stdenv.mkDerivation (finalAttrs: {
           pname = "NanoKVM-USB-browser";
-          version = inputs.NanoKVM-USB.rev;
+          version = inputs.self.rev;
 
-          src = "${inputs.NanoKVM-USB}/browser";
+          src = ./browser;
 
           nativeBuildInputs = [
             nodejs
